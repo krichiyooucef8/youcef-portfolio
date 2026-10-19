@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Youcef Krichi (EL JOE) — Multidisciplinary Designer, Digital Strategist, Technical & Production Specialist. From Zero to Perfection." />
+  <title>Youcef Krichi — EL JOE | Creative, Technical & Marketing Portfolio</title>
+  
+  <!-- Open Graph Meta Tags for Facebook & Social Sharing -->
+  <meta property="og:title" content="Youcef Krichi — EL JOE | Multidisciplinary Designer & Production Specialist" />
+  <meta property="og:description" content="Design with intention. Strategy with purpose. Results in the real world." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.facebook.com/youcef.krichi.3/" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-paper: #FBF9F5;
+      --bg-surface: #FFFFFF;
+      --bg-card: #F5EFE6;
+      --bg-dark: #201D19;
+      --text-main: #24211D;
+      --text-muted: #6B655D;
+      --text-light: #A39B90;
+      --clay: #B66F50;
+      --clay-dark: #8F4F36;
+      --clay-light: #E8D3C8;
+      --border-line: #E5DDCF;
+      --border-subtle: #F0E8DD;
+      
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-signature: 'Caveat', cursive;
+      
+      --shadow-sm: 0 4px 15px rgba(36,33,29,0.03);
+      --shadow-md: 0 12px 35px rgba(36,33,29,0.06);
+      --shadow-lg: 0 20px 50px rgba(36,33,29,0.1);
+      --radius: 8px;
+      --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--bg-paper);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: min(1200px, calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--clay-dark);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .section-eyebrow::before {
+      content: "";
+      width: 24px;
+      height: 1.5px;
+      background-color: var(--clay);
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+
+    .section-subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 620px;
+      font-weight: 400;
+    }
+
+    .signature-badge {
+      font-family: var(--font-signature);
+      font-size: 1.4rem;
+      color: var(--clay-dark);
+      display: inline-block;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      cursor: pointer;
+      transition: var(--transition);
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background-color: var(--text-main);
+      color: #FFFFFF;
+      border-color: var(--text-main);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--clay-dark);
+      border-color: var(--clay-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(143, 79, 54, 0.25);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--text-main);
+      border-color: var(--border-line);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--bg-surface);
+      border-color: var(--clay);
+      transform: translateY(-2px);
+    }
+
+    .btn-clay {
+      background-color: var(--clay);
+      color: #FFFFFF;
+      border-color: var(--clay);
+    }
+
+    .btn-clay:hover {
+      background-color: var(--clay-dark);
+      border-color: var(--clay-dark);
+      transform: translateY(-2px);
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(251, 249, 245, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: var(--transition);
+    }
+
+    .nav-inner {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--clay);
+      display: grid;
+      place-items: center;
+      font-family: var(--font-serif);
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: var(--clay-dark);
+      background: var(--bg-surface);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .brand-signature {
+      font-family: var(--font-signature);
+      font-size: 1.05rem;
+      color: var(--clay-dark);
+      line-height: 1;
+      margin-top: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .nav-link:hover {
+      color: var(--clay-dark);
+    }
+
+    .hero {
+      padding: 70px 0 90px;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-content h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2.5rem, 5vw, 4.2rem);
+      font-weight: 500;
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      margin: 18px 0 24px;
+    }
+
+    .hero-content h1 em {
+      font-style: italic;
+      color: var(--clay);
+      font-weight: 400;
+    }
+
+    .hero-tagline {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      max-width: 520px;
+      font-weight: 400;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .hero-trust {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-line);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .trust-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      font-weight: 700;
+    }
+
+    .partner-logos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .partner-badge {
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-line);
+      border-radius: 4px;
+      transition: var(--transition);
+    }
+
+    .partner-badge:hover {
+      border-color: var(--clay);
+      color: var(--clay-dark);
+      transform: translateY(-2px);
+    }
+
+    .hero-card-frame {
+      position: relative;
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-line);
+      padding: 24px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .hero-card-image {
+      position: relative;
+      aspect-ratio: 4/3;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      background-color: var(--bg-card);
+    }
+
+    .hero-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .hero-card-title {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+
+    .hero-card-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .ticker-strip {
+      background-color: var(--bg-dark);
+      color: var(--bg-paper);
+      padding: 18px 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .ticker-flex {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .ticker-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .ticker-item::after {
+      content: "✦";
+      color: var(--clay);
+      font-size: 0.7rem;
+    }
+
+    section {
+      padding: 100px 0;
+    }
+
+    .section-header-wrap {
+      margin-bottom: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 24px;
+    }
+
+    .service-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-line);
+      padding: 36px 32px;
+      border-radius: var(--radius);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--clay-light);
+    }
+
+    .service-num {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--clay);
+      letter-spacing: 0.15em;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      font-weight: 500;
+      margin-bottom: 16px;
+      line-height: 1.25;
+    }
+
+    .service-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .service-list li {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      position: relative;
+      padding-left: 18px;
+    }
+
+    .service-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--clay);
+    }
+
+    .portfolio-section {
+      background-color: var(--bg-card);
+      border-top: 1px solid var(--border-line);
+      border-bottom: 1px solid var(--border-line);
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .filter-btn {
+      padding: 8px 20px;
+      border-radius: 999px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-line);
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      color: var(--text-muted);
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--text-main);
+      color: #FFFFFF;
+      border-color: var(--text-main);
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 28px;
+    }
+
+    .project-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .project-image {
+      aspect-ratio: 16/10;
+      overflow: hidden;
+      position: relative;
+      background-color: #E2D9CC;
+    }
+
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .project-card:hover .project-image img {
+      transform: scale(1.05);
+    }
+
+    .project-info {
+      padding: 24px;
+    }
+
+    .project-category {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--clay-dark);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .project-title {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .project-desc {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      max-width: 860px;
+    }
+
+    .timeline-item {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-line);
+      border-radius: var(--radius);
+      padding: 32px;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 24px;
+      transition: var(--transition);
+    }
+
+    .timeline-item:hover {
+      border-color: var(--clay);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .timeline-date {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--clay-dark);
+      letter-spacing: 0.05em;
+    }
+
+    .timeline-company {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    .timeline-role {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .timeline-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .about-card {
+      background: var(--bg-dark);
+      color: var(--bg-paper);
+      border-radius: var(--radius);
+      padding: 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-card .section-eyebrow {
+      color: var(--clay-light);
+    }
+
+    .about-card .section-eyebrow::before {
+      background-color: var(--clay-light);
+    }
+
+    .about-card h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 500;
+      margin-bottom: 24px;
+      color: #FFFFFF;
+    }
+
+    .about-card p {
+      color: #D6CEC3;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 24px;
+      max-width: 800px;
+    }
+
+    .philosophy-highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .ph-item strong {
+      display: block;
+      color: #FFFFFF;
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .ph-item p {
+      font-size: 0.85rem;
+      color: #B0A79B;
+      margin: 0;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .contact-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-line);
+      border-radius: var(--radius);
+      padding: 40px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .contact-card-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 24px;
+      background: var(--bg-paper);
+      border: 1px solid var(--border-line);
+      border-radius: 6px;
+      transition: var(--transition);
+    }
+
+    .contact-card-link:hover {
+      border-color: var(--clay);
+      background: var(--bg-surface);
+      transform: translateX(4px);
+    }
+
+    .contact-card-link span small {
+      display: block;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 2px;
+      font-weight: 700;
+    }
+
+    .contact-card-link span strong {
+      font-size: 1.05rem;
+      color: var(--text-main);
+    }
+
+    .arrow-icon {
+      font-size: 1.2rem;
+      color: var(--clay);
+    }
+
+    footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--border-line);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .footer-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(36, 33, 29, 0.7);
+      backdrop-filter: blur(8px);
+      z-index: 200;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      padding: 24px;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-container {
+      background: var(--bg-surface);
+      border-radius: var(--radius);
+      max-width: 750px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 40px;
+      position: relative;
+      transform: translateY(20px);
+      transition: transform 0.3s ease;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .modal-overlay.active .modal-container {
+      transform: translateY(0);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: var(--bg-paper);
+      border: 1px solid var(--border-line);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid, .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .about-card {
+        padding: 36px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">
+        <div class="brand-logo">YK</div>
+        <div class="brand-text">
+          <span class="brand-name">Youcef Krichi</span>
+          <span class="brand-signature">EL JOE</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#expertise" class="nav-link">Core Expertise</a></li>
+        <li><a href="#work" class="nav-link">Selected Work</a></li>
+        <li><a href="#experience" class="nav-link">Career</a></li>
+        <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+        <li><a href="#contact" class="btn btn-primary">Start a Project ↗</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="section-eyebrow">Multidisciplinary Professional</span>
+          <h1>Design with intention.<br><em>Strategy with purpose.</em></h1>
+          <p class="hero-tagline">
+            I am Youcef Krichi — combining design, digital marketing, technology, and industrial production to turn ideas into functional, market-ready solutions.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="https://wa.me/213776839760" target="_blank" rel="noopener" class="btn btn-primary">
+              Message on WhatsApp ↗
+            </a>
+            <a href="#work" class="btn btn-secondary">Explore Work</a>
+          </div>
+
+          <div class="hero-trust">
+            <span class="trust-label">Industry Experience & Collaborations</span>
+            <div class="partner-logos">
+              <span class="partner-badge">Amiros Industries</span>
+              <span class="partner-badge">ICH</span>
+              <span class="partner-badge">Master Machine</span>
+              <span class="partner-badge">Superette Family One</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Showcase Card -->
+        <div class="hero-card-frame">
+          <div class="hero-card-image">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80" alt="CNC Machining & Technical Fabrication" />
+          </div>
+          <div class="hero-card-meta">
+            <div>
+              <div class="hero-card-title">From Zero to Perfection</div>
+              <div class="hero-card-desc">Conception, Fabrication & Commercial Execution</div>
+            </div>
+            <span class="signature-badge">EL JOE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ticker Strip -->
+    <div class="ticker-strip">
+      <div class="ticker-flex container">
+        <div class="ticker-item">CNC Machining</div>
+        <div class="ticker-item">Laser Cutting</div>
+        <div class="ticker-item">Illuminated Signage</div>
+        <div class="ticker-item">Meta Ads Manager</div>
+        <div class="ticker-item">MDF Furniture Design</div>
+        <div class="ticker-item">Workflow Automation</div>
+      </div>
+    </div>
+
+    <!-- Core Expertise -->
+    <section id="expertise">
+      <div class="container">
+        <div class="section-header-wrap">
+          <div>
+            <span class="section-eyebrow">What I Bring</span>
+            <h2 class="section-title">Six Pillars of Expertise</h2>
+          </div>
+          <p class="section-subtitle">
+            Connecting creative vision with physical production, digital acquisition, and operational structure.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- 01 -->
+          <div class="service-card">
+            <div>
+              <div class="service-num">01 / BRANDING</div>
+              <h3>Graphic Design & Visual Identity</h3>
+              <ul class="service-list">
+                <li>Brand identity & logo systems</li>
+                <li>Advertising creatives & visual communication</li>
+                <li>Packaging design & product presentation</li>
+                <li>Signage & illuminated sign concepts</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 02 -->
+          <div class="service-card">
+            <div>
+              <div class="service-num">02 / GROWTH</div>
+              <h3>Digital Marketing & Ads Management</h3>
+              <ul class="service-list">
+                <li>Meta Ads planning & ROI optimization</li>
+                <li>E-commerce growth & customer acquisition</li>
+                <li>Commercial media production</li>
+                <li>Market positioning & competitor analysis</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 03 -->
+          <div class="service-card">
+            <div>
+              <div class="service-num">03 / DIGITAL</div>
+              <h3>Web Design & Digital Solutions</h3>
+              <ul class="service-list">
+                <li>Conversion-focused landing pages</li>
+                <li>AI-assisted creative workflows</li>
+                <li>Business process digitization</li>
+                <li>Custom digital user experiences</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="service-card">
+            <div>
+              <div class="service-num">04 / SPATIAL</div>
+              <h3>Architecture, Interiors & Furniture</h3>
+              <ul class="service-list">
+                <li>Interior spatial planning & 3D renders</li>
+                <li>Furniture design & technical development</li>
+                <li>MDF furniture production setup</li>
+                <li>Functional architectural fixtures</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="service-card">
+            <div>
+              <div class="service-num">05 / PRODUCTION</div>
+              <h3>Technical Design & Industrial CNC</h3>
+              <ul class="service-list">
+                <li>CNC machining & vector preparation</li>
+                <li>Laser cutting & engraving optimization</li>
+                <li>Illuminated signage manufacturing files</li>
+                <li>Quality control & workshop workflows</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="service-card">
+            <div>
+              <div class="service-num">06 / OPERATIONS</div>
+              <h3>Project Management & Automation</h3>
+              <ul class="service-list">
+                <li>Workshop & team coordination</li>
+                <li>Order tracking & production planning</li>
+                <li>Design-to-factory communication bridge</li>
+                <li>Practical task automation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work Portfolio -->
+    <section class="portfolio-section" id="work">
+      <div class="container">
+        <div class="section-header-wrap">
+          <div>
+            <span class="section-eyebrow">Portfolio</span>
+            <h2 class="section-title">Selected Projects & Directions</h2>
+          </div>
+          
+          <div class="filter-tabs">
+            <button class="filter-btn active" onclick="filterProjects('all')">All Work</button>
+            <button class="filter-btn" onclick="filterProjects('production')">CNC & Signage</button>
+            <button class="filter-btn" onclick="filterProjects('furniture')">Furniture & Interiors</button>
+            <button class="filter-btn" onclick="filterProjects('branding')">Branding & Ads</button>
+          </div>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- Project 1 -->
+          <div class="project-card" data-category="production" onclick="openModal('Illuminated Signage & CNC Manufacturing', 'ICH Workshop Management', '3D letter fabrication, illuminated signage structures, and CNC toolpath optimization for commercial facades.')">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80" alt="Signage Production" />
+            </div>
+            <div class="project-info">
+              <div class="project-category">Technical Production / ICH</div>
+              <h3 class="project-title">Illuminated Signage & CNC Cut Files</h3>
+              <p class="project-desc">Complete workshop preparation, CNC vector nesting, assembly and installation.</p>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card" data-category="furniture" onclick="openModal('MDF Furniture & Interior Renders', 'Amiros Industries', 'Modular MDF furniture development, technical joinery drawings, and realistic 3D visualization.')">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80" alt="Furniture Design" />
+            </div>
+            <div class="project-info">
+              <div class="project-category">Industrial Furniture / Amiros</div>
+              <h3 class="project-title">Modular Furniture & Spatial Concepts</h3>
+              <p class="project-desc">Commercial furniture design combining aesthetics with factory manufacturing constraints.</p>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card" data-category="branding" onclick="openModal('Meta Ads & Growth Strategy', 'Master Machine & Clients', 'High-performing commercial campaigns, visual assets, and customer acquisition funnels.')">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Digital Marketing" />
+            </div>
+            <div class="project-info">
+              <div class="project-category">Marketing & Meta Ads</div>
+              <h3 class="project-title">Digital Marketing & Media Buying</h3>
+              <p class="project-desc">Campaign strategy, commercial content, and ROI optimization for businesses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Timeline -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header-wrap">
+          <div>
+            <span class="section-eyebrow">Track Record</span>
+            <h2 class="section-title">Professional Experience</h2>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2025 — 2026</div>
+            <div>
+              <div class="timeline-company">Amiros Industries</div>
+              <div class="timeline-role">Furniture & Industrial Production Specialist</div>
+              <p class="timeline-text">
+                Combined product design, workshop coordination, technical workflows, and commercial development within an active furniture manufacturing environment.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">2024 — 2025</div>
+            <div>
+              <div class="timeline-company">ICH</div>
+              <div class="timeline-role">Signage & Workshop Manager</div>
+              <p class="timeline-text">
+                Managed production workflows in illuminated advertising: CNC file preparation, material optimization, quality control, assembly team follow-up, and on-site installation.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">2023 — 2024</div>
+            <div>
+              <div class="timeline-company">Freelance Consultant</div>
+              <div class="timeline-role">Multidisciplinary Design & Marketing</div>
+              <p class="timeline-text">
+                Provided branding, packaging design, Meta Ads management, product marketing, and 3D architectural visualization for diverse commercial clients.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">2022 — 2023</div>
+            <div>
+              <div class="timeline-company">Master Machine</div>
+              <div class="timeline-role">Digital Marketing & Branding Specialist</div>
+              <p class="timeline-text">
+                Led commercial communication, brand positioning, graphic design, client relationship management, and digital marketing strategies.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">2020 — 2022</div>
+            <div>
+              <div class="timeline-company">Superette Family One</div>
+              <div class="timeline-role">Commercial Operations & Store Management</div>
+              <p class="timeline-text">
+                Oversee store management, inventory control, commercial organization, and daily customer relations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Working Philosophy -->
+    <section id="philosophy">
+      <div class="container">
+        <div class="about-card">
+          <span class="section-eyebrow">Working Philosophy</span>
+          <h2>Aesthetics must serve a purpose.</h2>
+          <p>
+            I believe effective design goes beyond appearance. A visual identity should communicate true value. A website must convert visits into real business opportunities. A CNC production file must translate flawlessly onto the factory floor. An automated workflow should save hours and eliminate costly human errors.
+          </p>
+
+          <div class="philosophy-highlights">
+            <div class="ph-item">
+              <strong>Creative + Operational</strong>
+              <p>Bridging the gap between creative design and real manufacturing.</p>
+            </div>
+            <div class="ph-item">
+              <strong>Technical Precision</strong>
+              <p>Understanding materials, CNC tolerances, and production files.</p>
+            </div>
+            <div class="ph-item">
+              <strong>Commercial Focus</strong>
+              <p>Every effort is designed to yield measurable business growth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Direct Links -->
+    <section id="contact">
+      <div class="container contact-grid">
+        <div>
+          <span class="section-eyebrow">Let's Collaborate</span>
+          <h2 class="section-title">Start a Conversation</h2>
+          <p class="section-subtitle">
+            Whether you need custom CNC manufacturing, illuminated signage, Meta Ads management, or a complete brand overhaul from zero to perfection — let's connect.
+          </p>
+          
+          <div class="signature-badge" style="margin-top: 24px; font-size: 1.8rem;">
+            Youcef Krichi — EL JOE
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <div class="contact-links">
+            <a href="https://wa.me/213776839760" target="_blank" rel="noopener" class="contact-card-link">
+              <span>
+                <small>WHATSAPP DIRECT</small>
+                <strong>+213 776 839 760</strong>
+              </span>
+              <span class="arrow-icon">↗</span>
+            </a>
+
+            <a href="https://www.facebook.com/youcef.krichi.3/" target="_blank" rel="noopener" class="contact-card-link">
+              <span>
+                <small>FACEBOOK PROFILE</small>
+                <strong>facebook.com/youcef.krichi.3</strong>
+              </span>
+              <span class="arrow-icon">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-flex">
+      <div>
+        © <span id="year">2026</span> <strong>Youcef Krichi (EL JOE)</strong>. All rights reserved.
+      </div>
+      <div>
+        Creative Thinking · Technical Precision · Practical Results
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Project Modal Drawer -->
+  <div class="modal-overlay" id="projectModal" onclick="closeModal(event)">
+    <div class="modal-container" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModalDirect()">×</button>
+      <span class="section-eyebrow" id="modalCategory">Project Showcase</span>
+      <h2 class="section-title" id="modalTitle" style="margin-top: 8px;">Project Title</h2>
+      <p id="modalDesc" style="color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-top: 16px;">
+        Detailed breakdown of design choices, production specifications, and marketing strategy.
+      </p>
+      <div style="margin-top: 32px;">
+        <a href="https://wa.me/213776839760" target="_blank" rel="noopener" class="btn btn-clay">
+          Discuss a Similar Project ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function filterProjects(category) {
+      const cards = document.querySelectorAll('.project-card');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function openModal(title, category, desc) {
+      document.getElementById('modalTitle').textContent = title;
+      document.getElementById('modalCategory').textContent = category;
+      document.getElementById('modalDesc').textContent = desc;
+      document.getElementById('projectModal').classList.add('active');
+    }
+
+    function closeModal(e) {
+      if (e.target.id === 'projectModal') {
+        document.getElementById('projectModal').classList.remove('active');
+      }
+    }
+
+    function closeModalDirect() {
+      document.getElementById('projectModal').classList.remove('active');
+    }
+  </script>
+</body>
+</html>
